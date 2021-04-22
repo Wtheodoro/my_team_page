@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top {
+    background-color: lightskyblue;
+    margin: 6rem 15rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top h1 {
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-top: 1rem;
+}
+
+.top .description {
+    width: 27.5rem;
+}
+
+.top .description h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+}
+
+.top .description p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.the-crew {
+    background-color: rgb(250, 135, 225);
+    margin: 6rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.the-crew .member-card {
+    background-color: limegreen;
+    margin-bottom: 1rem;
+    width: 30%;
+}
+
+.the-crew .member-card .field {
+    display: flex;
+    position: relative;
+}
+
+.the-crew .member-card .field img {
+    width: 14.875rem;
+}
+
+.the-crew .member-card .field p {
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 40%;
+}
+
+.footer {
+    font-size: 0.875rem;
+    color: #444444;
+    display: flex;
+    justify-content: center;
+}
