@@ -48,6 +48,10 @@
     width: 30%;
 }
 
+.the-crew .member-card h2{
+    font-size: 1.2rem;
+}
+
 .the-crew .member-card .field {
     display: flex;
     position: relative;
@@ -55,9 +59,11 @@
 
 .the-crew .member-card .field img {
     width: 14.875rem;
+    margin: 0 .625rem .9375rem 0;
 }
 
 .the-crew .member-card .field p {
+    font-family: 'PT Serif', sans-serif;
     text-transform: uppercase;
     transform: rotate(90deg);
     position: absolute;
@@ -69,4 +75,11 @@
     color: #444444;
     display: flex;
     justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .the-crew .member-card:nth-child(3n - 1) {
+        background-color: lightpink;
+        padding-top: 4.2rem;
+    }
 }
