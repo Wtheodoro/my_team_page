@@ -5,11 +5,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.top {
-    background-color: lightskyblue;
-    margin: 6rem 15rem;
+body {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
 }
 
 .top h1 {
@@ -35,17 +42,20 @@
 }
 
 .the-crew {
-    background-color: rgb(250, 135, 225);
-    margin: 6rem 15rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    max-width: 80%;
+    margin-bottom: 4rem;
 }
 
 .the-crew .member-card {
-    background-color: limegreen;
     margin-bottom: 1rem;
-    width: 30%;
+    width: fit-content;
+}
+
+.member-card + .member-card {
+    margin-left: 2rem;
 }
 
 .the-crew .member-card h2{
@@ -55,6 +65,7 @@
 .the-crew .member-card .field {
     display: flex;
     position: relative;
+
 }
 
 .the-crew .member-card .field img {
@@ -63,11 +74,16 @@
 }
 
 .the-crew .member-card .field p {
+    font-size: .75rem;
     font-family: 'PT Serif', sans-serif;
     text-transform: uppercase;
+    height: 1rem;
+    width: 10rem;
     transform: rotate(90deg);
     position: absolute;
-    left: 40%;
+    top: 21%;
+    left: 70%;
+    z-index: 10;
 }
 
 .footer {
@@ -77,9 +93,86 @@
     justify-content: center;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 769px) {
     .the-crew .member-card:nth-child(3n - 1) {
-        background-color: lightpink;
         padding-top: 4.2rem;
+        padding-top: 6rem;
     }
 }
+
+@media(max-width: 768px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .the-crew .member-card:nth-child(even) {
+        padding-top: 4.2rem;
+        padding-top: 6rem;
+    }
+}
+
+@media(max-width: 659px) {
+    html {
+        font-size: 75%;
+    }
+
+    .top h1 {
+        font-size: 3rem;
+    }
+
+    .top .description {
+        width: 30rem;
+    }
+    
+    .top .description h3 {
+        font-size: 1.6rem;
+    }
+    
+    .top .description p {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media(max-width: 420px) {
+    html {
+        font-size: 55%;
+    }
+
+    .top h1 {
+        font-size: 3.5rem;
+    }
+
+    .top .description {
+        width: 40rem;
+    }
+    
+    .top .description h3 {
+        font-size: 2rem;
+    }
+    
+    .top .description p {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media(max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+
+    .top h1 {
+        font-size: 3.5rem;
+    }
+    
+    .top .description h3 {
+        font-size: 2.5rem;
+    }
+    
+    .top .description p {
+        font-size: 2rem;
+    }
+}
+
