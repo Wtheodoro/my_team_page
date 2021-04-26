@@ -176,3 +176,12 @@ body {
     }
 }
 
+@media(min-width: 1300px) {
+    .top {
+        width: 60%;
+    }
+    
+    .the-crew .member-card {
+        margin: 5rem;
+    }
+}
