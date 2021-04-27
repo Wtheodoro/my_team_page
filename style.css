@@ -52,6 +52,7 @@ body {
 .the-crew .member-card {
     margin-bottom: 1rem;
     width: fit-content;
+    width: 30%;
 }
 
 .member-card + .member-card {
@@ -173,15 +174,5 @@ body {
     
     .top .description p {
         font-size: 2rem;
-    }
-}
-
-@media(min-width: 1300px) {
-    .top {
-        width: 60%;
-    }
-    
-    .the-crew .member-card {
-        margin: 5rem;
     }
 }
