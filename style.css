@@ -42,17 +42,16 @@ body {
 }
 
 .the-crew {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 80%;
+    width: 80%;
     margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4rem;
 }
 
 .the-crew .member-card {
     margin-bottom: 1rem;
     width: fit-content;
-    width: 30%;
 }
 
 .member-card + .member-card {
@@ -107,8 +106,10 @@ body {
         flex-direction: column;
     }
 
-    .the-crew .member-card {
-        width: 44%;
+    .the-crew {
+        width: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
     }
 
     .the-crew .member-card:nth-child(even) {
@@ -124,10 +125,6 @@ body {
 
     .top h1 {
         font-size: 3rem;
-        margin: 2rem 0;
-    }
-
-    .the-crew {
         margin: 2rem 0;
     }
 
@@ -165,10 +162,6 @@ body {
     .top .description p {
         font-size: 1.8rem;
     }
-
-    .the-crew .member-card {
-        width: 40%;
-    }
 }
 
 
@@ -187,9 +180,5 @@ body {
     
     .top .description p {
         font-size: 2rem;
-    }
-
-    .the-crew .member-card {
-        width: 40%;
     }
 }
